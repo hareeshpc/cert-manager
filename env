@@ -1,0 +1,28 @@
+CFSSL_RELEASE="1.2"
+
+BIN_DIR="$DIR/bin"
+PKI_DIR="$DIR/pki"
+PKI_PROFILE_DIR="$DIR/pki-profiles"
+
+PATH=$PATH:$BIN_DIR
+
+CA_NAME=MyTest
+
+DOMAIN="mycompany.com"
+EMAIL_DOMIAN="mycompany.com"
+
+# Add your desired servers here. 
+# Only servername is needed. Domain will be automatically appended
+# Existing ones will be skipped
+SERVERS=(
+     keycloak
+     k8sauth
+)
+
+# Add your desired users/clients here. 
+# Existing ones will be skipped
+
+USERS=(
+     admin
+     viewuser
+)
