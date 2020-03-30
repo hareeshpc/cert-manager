@@ -1,6 +1,7 @@
 # Cert-Manager
 
-A minimalist certificate generator for generating X509 certificates
+A minimalist certificate generator for generating X509 certificates.
+
 Use case: Certificates for mutual TLS authentication
 
 # Instructions
